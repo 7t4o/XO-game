@@ -112,7 +112,8 @@ function check(){
         do{
             rand = Math.floor(Math.random() * 9) + 1;
         }while(document.getElementById(rand).textContent != "");
-        document.getElementById(rand).click();
+        setTimeout(() => {document.getElementById(rand).click()}, 1000);
+        
     }
 }
 
